@@ -27,16 +27,7 @@ alias resetdb='rake db:drop:all;rake db:create:all;rake db:migrate;rake db:seed'
 
 alias go?='~/Dropbox/calculadora.rb'
 alias suse='sudo service'
-
 alias t='tree'
-
-#PROJECTS
-alias alonso='cd ~/projects/alonso'
-alias fangio='cd ~/projects/fangio'
-alias hill='cd ~/projects/hill'
-alias prost='cd ~/projects/prost'
-alias schumi='cd ~/projects/schumi'
-
 alias mvim="/Applications/MacVim.app/Contents/MacOS/MacVim"
 
 #GIT

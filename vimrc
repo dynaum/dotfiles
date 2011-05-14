@@ -8,8 +8,6 @@ set nu
 set sts=2
 set sw=2
 set guifont=monaco
-set guioptions-=m
-set guioptions-=T
 
 ab rdb require 'ruby-debug';debugger
 
@@ -38,6 +36,7 @@ inoremap <right> <nop>
 "turn off needless toolbar on gvim/mvim
 set guioptions+=TLlRrb
 set guioptions-=TLlRrb
+set guioptions-=m
 
 "leader-t configuration
 let g:CommandTMaxHeight=15
@@ -70,7 +69,6 @@ function! s:HighlightLongLines(width)
   "key mapping for vimgrep result navigation
 
   " Tab mappings.
-  map <leader>tt :tabnew<cr>
   map <leader>te :tabedit
   map <leader>tc :tabclose<cr>
   map <leader>to :tabonly<cr>
@@ -91,7 +89,6 @@ function! s:HighlightLongLines(width)
 
   nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
-  nnoremap <leader>a :Ack
   nnoremap <leader>c :bd<CR>
   nnoremap <leader>ft Vatzf
   nnoremap <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:let @/=''<CR>
