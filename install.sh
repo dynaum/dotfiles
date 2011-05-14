@@ -1,8 +1,9 @@
-ln -s $PWD/bash_profile ~/.bash_profile
-ln -s $PWD/profile ~/.profile
-ln -s $PWD/irbrc ~/.irbrc
-ln -s $PWD/alias ~/.alias
-ln -s $PWD/vimrc ~/.vimrc
-ln -s $PWD/git-completion.sh ~/.git-completion.sh
+files=( bash_profile profile irbrc alias vimrc git-completion.sh )
+
+for filename in ${files[@]}
+do
+  [[ -s $HOME/.$filename ]] && rm $HOME/.$filename
+  ln -s $PWD/$filename ~/.$filename
+done
 
 source ~/.bash_profile
