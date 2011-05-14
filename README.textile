@@ -1,0 +1,5 @@
+h1. Installation:
+
+<pre><code>git clone git://github.com/dynaum/dotfiles.git ~/projects/dotfiles
+cd ~/projects/dotfiles
+./install.sh</code></pre>
