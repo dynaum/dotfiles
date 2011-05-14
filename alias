@@ -1,0 +1,49 @@
+# some more ls aliases
+alias ll='ls -lh'
+alias la='ls -A'
+alias l='ls -CF'
+alias install='sudo apt-get install'
+alias search='sudo apt-cache search'
+alias stemp='find ./ -iname "*~"'
+alias rtemp='find ./ -iname "*~" -exec rm -f {} \;'
+alias hg='history | grep'
+alias ..='cd ..'
+alias ...='cd ..; ll'
+alias cd..='cd ..'
+alias home='cd ~'
+alias psg='ps -ef | grep'
+
+#GEM
+alias gl='gem list'
+alias glg='gem list | grep'
+alias gi='gem install $1 --no-ri --no-rdoc'
+alias sgi='sudo gem install $1 --no-ri --no-rdoc'
+alias gu='gem update --no-ri --no-rdoc'
+alias sgu='sudo gem update --no-ri --no-rdoc'
+alias bi='bundle install'
+
+#RAILS
+alias resetdb='rake db:drop:all;rake db:create:all;rake db:migrate;rake db:seed'
+
+alias go?='~/Dropbox/calculadora.rb'
+alias suse='sudo service'
+
+alias t='tree'
+
+#PROJECTS
+alias alonso='cd ~/projects/alonso'
+alias fangio='cd ~/projects/fangio'
+alias hill='cd ~/projects/hill'
+alias prost='cd ~/projects/prost'
+alias schumi='cd ~/projects/schumi'
+
+alias mvim="/Applications/MacVim.app/Contents/MacOS/MacVim"
+
+#GIT
+alias gitrb="git fetch; git rebase origin/master"
+alias g='git $1 | cowthink -n -f tux.cow'
+
+#MONGO
+alias mongo-start="mongod --fork --dbpath \$EPREFIX/var/lib/mongodb --logpath \$EPREFIX/var/log/mongodb.log"
+alias mongo-stop="killall -SIGTERM mongod 2>/dev/null"
+alias mongo-status="killall -0 mongod 2>/dev/null; if [ \$? -eq 0 ]; then echo 'started'; else echo 'stopped'; fi"
