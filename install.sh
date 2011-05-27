@@ -1,4 +1,4 @@
-files=( bash_profile profile irbrc alias vimrc git-completion.sh )
+files=( bash_profile profile irbrc alias vimrc screenrc git-completion.sh )
 
 for filename in ${files[@]}
 do

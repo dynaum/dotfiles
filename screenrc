@@ -1,0 +1,29 @@
+attrcolor b ".I"
+defbce "on"
+
+multiuser on
+shell -/bin/zsh           # Use zsh 
+aclchg * -w "#"
+vbell off
+startup_message off       # No startup mesage
+msgwait 1                 # Show messages for only one second
+defscrollback 30000       # Use a 30000-line scrollback buffer
+ignorecase on             # Ignore case in incremental search
+
+caption string "%?%F%{= Bk}%? %C%A %D %d-%m-%Y %{= kB} %t%= %?%F%{= Bk}%:%{= wk}%? %n "
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+
+bind b eval "writebuf" "exec sh -c 'pbcopy < /tmp/screen-exchange'"
+
+chdir /Users/dynaum/
+
+screen -t vim 0 zsh
+screen -t test 1 zsh
+screen -t app 2 zsh
+screen -t shell 3 zsh
+screen -t console 4 zsh
+
+defutf8 on
+
+shelltitle "shell"
