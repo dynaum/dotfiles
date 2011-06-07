@@ -8,6 +8,7 @@ set nu
 set sts=2
 set sw=2
 set guifont=monaco
+colorscheme busybee
 
 ab rdb require 'ruby-debug';debugger
 
