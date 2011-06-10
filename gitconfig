@@ -1,0 +1,22 @@
+[user]
+  name  = Elber Ribeiro
+  email = dynaumloko@gmail.com
+
+[github]
+  username = dynaum
+
+[alias]
+  st  = status
+  ci  = commit
+  br  = branch
+  co  = checkout
+  df  = diff
+  lg  = log --graph --pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date = relative
+  who = shortlog -s --
+
+[color]
+  branch     = auto
+  diff       = auto
+  interative = auto
+  status     = auto
+  grep       = auto
