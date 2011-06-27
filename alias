@@ -33,6 +33,8 @@ alias mvim="/Applications/MacVim.app/Contents/MacOS/MacVim"
 #GIT
 alias gitrb="git fetch; git rebase origin/master"
 alias g='git $1 | cowthink -n -f tux.cow'
+alias pull='git fetch; git pull origin master'
+alias mu='git pull; git submodule update --init'
 
 #MONGO
 alias mongo-start="mongod --fork --dbpath \$EPREFIX/var/lib/mongodb --logpath \$EPREFIX/var/log/mongodb.log"

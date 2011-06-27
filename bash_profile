@@ -10,6 +10,8 @@ export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="4;33"
 export CLICOLOR="auto"
 export MANPAGER="/opt/local/bin/most -s"
+export JASMINE_BROWSER="googlechrome"
+export PROJECTS_DIR="/Users/dynaum/projects/r7"
 
 # Alias e atalhos
 case `uname` in
