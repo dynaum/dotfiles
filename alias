@@ -21,6 +21,7 @@ alias sgi='sudo gem install $1 --no-ri --no-rdoc'
 alias gu='gem update --no-ri --no-rdoc'
 alias sgu='sudo gem update --no-ri --no-rdoc'
 alias bi='bundle install'
+alias bu='bundle update'
 
 #RAILS
 alias resetdb='rake db:drop:all;rake db:create:all;rake db:migrate;rake db:seed'
