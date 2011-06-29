@@ -25,6 +25,7 @@ alias bu='bundle update'
 
 #RAILS
 alias resetdb='rake db:drop:all;rake db:create:all;rake db:migrate;rake db:seed'
+alias rst='rails s thin'
 
 alias go?='~/Dropbox/calculadora.rb'
 alias suse='sudo service'
