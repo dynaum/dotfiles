@@ -12,6 +12,7 @@ alias ...='cd ..; ll'
 alias cd..='cd ..'
 alias home='cd ~'
 alias psg='ps -ef | grep'
+alias llg='launchctl list | grep'
 
 #GEM
 alias gl='gem list'

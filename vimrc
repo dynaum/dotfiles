@@ -2,9 +2,8 @@ source ~/.vim/vimrc
 
 set mouse=a
 set ttymouse=xterm2
-
-set lines=40
-set columns=160
+set lines=42
+set columns=179
 set nowrap
 set nu
 set sts=2
