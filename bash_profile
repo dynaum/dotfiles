@@ -12,6 +12,7 @@ export CLICOLOR="auto"
 export MANPAGER="/opt/local/bin/most -s"
 export JASMINE_BROWSER="chrome"
 export PROJECTS_DIR="/Users/dynaum/projects/r7"
+export EDITOR="vim"
 
 # Alias e atalhos
 case `uname` in
