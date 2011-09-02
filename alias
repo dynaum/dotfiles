@@ -52,3 +52,5 @@ alias redisstart='sudo launchctl start io.redis.redis-server'
 alias redisstop='sudo launchctl stop io.redis.redis-server'
 
 alias loser='say -v Cello "loser loser loser loser loser loser loser loser loser loser loser loser loser"'
+
+alias espresso='~/projects/github/Espresso/bin/espresso.js'
