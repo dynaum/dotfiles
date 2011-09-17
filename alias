@@ -32,6 +32,7 @@ alias go?='~/Dropbox/calculadora.rb'
 alias suse='sudo service'
 alias t='tree'
 alias mvim="/Applications/MacVim.app/Contents/MacOS/MacVim"
+alias r='rails'
 
 #GIT
 alias gitrb="git fetch; git rebase origin/master"
