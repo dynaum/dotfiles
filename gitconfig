@@ -11,7 +11,7 @@
   br  = branch
   co  = checkout
   df  = diff
-  lg  = log --graph --pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date = relative
+  lg  = log --oneline --decorate --graph --all
   who = shortlog -s --
 
 [color]
