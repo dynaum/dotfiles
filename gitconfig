@@ -1,6 +1,6 @@
 [user]
 	name = Elber Ribeiro
-  email = dynaumloko@gmail.com
+  email = elrdsilva@r7.com
 
 [github]
   username = dynaum
@@ -11,7 +11,7 @@
   br  = branch
   co  = checkout
   df  = diff
-  lg  = log --oneline --decorate --graph --all
+  lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   who = shortlog -s --
 
 [color]
