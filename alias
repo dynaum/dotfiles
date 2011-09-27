@@ -20,7 +20,7 @@ alias gi='gem install $1 --no-ri --no-rdoc'
 alias sgi='sudo gem install $1 --no-ri --no-rdoc'
 alias gu='gem update --no-ri --no-rdoc'
 alias sgu='sudo gem update --no-ri --no-rdoc'
-alias bi='bundle install && say -v Vicki "your bundle install is complete"'
+alias bi='bundle install'
 alias bu='bundle update'
 alias be='bundle exec'
 
