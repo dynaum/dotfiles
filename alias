@@ -51,7 +51,12 @@ alias mongo-status="killall -0 mongod 2>/dev/null; if [ \$? -eq 0 ]; then echo '
 #REDIS
 alias redisstart='sudo launchctl start io.redis.redis-server'
 alias redisstop='sudo launchctl stop io.redis.redis-server'
+alias redis-cleanup='redis-cli keys "*" | xargs redis-cli del'
 
 alias loser='say -v Cello "loser loser loser loser loser loser loser loser loser loser loser loser loser"'
 
 alias espresso='~/projects/github/Espresso/bin/espresso.js'
+
+#RVM
+alias ree='rvm use ree'
+alias ruby19='rvm use 1.9.2-p180'

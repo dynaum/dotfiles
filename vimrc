@@ -6,9 +6,9 @@ set nowrap
 set nu
 set sts=2
 set sw=2
-set guifont=monaco
+set guifont=FreeMono\ Powerline
+let g:Powerline_symbols = 'fancy'
 colorscheme busybee
-
 ab rdb require 'ruby-debug';debugger
 
 nmap <silent> <C-t> :CommandT<Enter>
@@ -19,6 +19,7 @@ nmap <silent> <F4> gg=G''
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 nmap <silent> <F6> :set lines=999 columns=999<Enter>
 let mapleader = ","
+cmap <C-e> <C-r>=expand('%:p:h')<CR>/
 
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
