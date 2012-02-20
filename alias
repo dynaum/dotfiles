@@ -10,7 +10,7 @@ alias ..='cd ..'
 alias ...='cd ..; ll'
 alias cd..='cd ..'
 alias home='cd ~'
-alias psg='ps -ef | grep'
+alias peg='ps -ef | grep -i'
 alias llg='launchctl list | grep'
 
 #GEM
