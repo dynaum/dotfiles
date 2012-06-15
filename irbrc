@@ -1,4 +1,4 @@
-%w{rubygems irb/completion irb/ext/save-history pp hirb ruby-debug wirble}.each do |lib| 
+%w{rubygems irb/completion irb/ext/save-history pp ruby-debug}.each do |lib| 
   begin 
     require lib 
   rescue LoadError => err
@@ -6,8 +6,6 @@
   end
 end
  
-Hirb.enable
-
 ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
  
 IRB.conf[:SAVE_HISTORY] = 100
@@ -22,5 +20,3 @@ if ENV.include?("RAILS_ENV") && !Object.const_defined?("RAILS_DEFAULT_LOGGER")
  require "logger"
  RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
 end
-
-%w{init colorize}.each { |str| Wirble.send(str) }
