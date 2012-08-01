@@ -34,6 +34,21 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+"statusline setup
+set statusline=%f       "tail of the filename
+
+"Git
+set statusline+=[%{GitBranch()}]
+
+"RVM
+set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''}
+
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
+set laststatus=2
+
 "turn off needless toolbar on gvim/mvim
 set guioptions+=TLlRrb
 set guioptions-=TLlRrb
