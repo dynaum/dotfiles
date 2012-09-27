@@ -17,3 +17,5 @@
   interative = auto
   status     = auto
   grep       = auto
+[push]
+	default = current
