@@ -10,6 +10,7 @@ ZSH_THEME="zhann"
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias git="nocorrect git"
 
 plugins=(git rvm brew bundler gem osx redis-cli)
 
