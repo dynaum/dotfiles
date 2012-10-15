@@ -18,4 +18,6 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
+PATH=$PATH:$HOME/bin
+
 . ~/.alias
