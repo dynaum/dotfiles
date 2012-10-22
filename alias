@@ -60,3 +60,6 @@ alias espresso='~/projects/github/Espresso/bin/espresso.js'
 #RVM
 alias ree='rvm use ree'
 alias ruby19='rvm use 1.9.2-p180'
+
+#MY IP
+alias myip='curl -s http://checkrealip.com/ | grep "Current IP Address"'
