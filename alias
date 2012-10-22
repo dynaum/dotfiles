@@ -63,3 +63,5 @@ alias ruby19='rvm use 1.9.2-p180'
 
 #MY IP
 alias myip='curl -s http://checkrealip.com/ | grep "Current IP Address"'
+
+alias dnsflush='sudo killall -HUP mDNSResponder'
