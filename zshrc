@@ -11,6 +11,7 @@ ZSH_THEME="zhann"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias git="nocorrect git"
+alias npm="nocorrect npm"
 
 plugins=(git rvm brew bundler gem osx redis-cli)
 
