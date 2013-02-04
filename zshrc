@@ -19,6 +19,7 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-PATH=$PATH:$HOME/bin
+homebrew=/usr/local/bin:/usr/local/sbin
+PATH=$homebrew:$PATH:$HOME/bin
 
 . ~/.alias
