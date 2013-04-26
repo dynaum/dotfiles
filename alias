@@ -36,7 +36,7 @@ alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias r='rails'
 
 #GIT
-alias gitrb="git fetch; git rebase origin/master"
+alias gitrb="fact && git fetch; git rebase origin/master"
 alias g='git $1 | cowthink -n -f tux.cow'
 alias pull='git fetch; git pull origin master'
 alias mu='git pull; git submodule update --init'
@@ -67,3 +67,5 @@ alias ruby19='rvm use 1.9.2-p180'
 alias myip='curl -s http://checkrealip.com/ | grep "Current IP Address"'
 
 alias dnsflush='sudo killall -HUP mDNSResponder'
+
+alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
