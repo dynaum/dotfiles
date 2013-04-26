@@ -13,6 +13,12 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias git="nocorrect git"
 alias npm="nocorrect npm"
 
+export EDITOR='vim'
+export CDPATH='.:~/:~/projects'
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 plugins=(git rvm brew bundler gem osx redis-cli)
 
 source $ZSH/oh-my-zsh.sh
@@ -23,3 +29,4 @@ homebrew=/usr/local/bin:/usr/local/sbin
 PATH=$homebrew:$PATH:$HOME/bin
 
 . ~/.alias
+. ~/.local_config
