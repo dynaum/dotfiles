@@ -1,4 +1,5 @@
 . ~/.profile
+. ~/.local_config
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -11,17 +12,7 @@ export GREP_COLOR="4;33"
 export CLICOLOR="auto"
 export MANPAGER="/opt/local/bin/most -s"
 export JASMINE_BROWSER="chrome"
-export PROJECTS_DIR="/Users/dynaum/projects/r7"
 export EDITOR="vim"
-
-# Alias e atalhos
-case `uname` in
- Darwin)
-   export MANPAGER="/opt/local/bin/most -s"
-   alias ls='ls -G'
-   ;;
- *) alias ls='ls --color=auto';;
-esac
 
 source "$HOME/.git-completion.sh"
 # PS1='[\u] \[\033[1;33m\]\w\a\[\033[0m\]$(__git_ps1 " \[\033[1;32m\](%s)\[\033[0m\]")\$ '
