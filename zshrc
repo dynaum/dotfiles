@@ -19,6 +19,8 @@ export CDPATH='.:~/:~/projects'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export TMUX_POWERLINE_SEG_WEATHER_LOCATION=26799139
+
 plugins=(git rvm brew bundler gem osx redis-cli)
 
 source $ZSH/oh-my-zsh.sh
