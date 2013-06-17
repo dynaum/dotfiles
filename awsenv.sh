@@ -82,8 +82,8 @@ function awsenv-set() {
     export AWS_SECRET_ACCESS_KEY=$( awk -F= '/SecretKey/ {print $2}' $AWS_CREDENTIAL_FILE 2>/dev/null || echo 'NOT-FOUND' )
 
     # EC2
-    export         EC2_CERT="$(/bin/ls $HOME/.aws/cert-*.pem 2>/dev/null || echo 'NOT-FOUND' )"
-    export  EC2_PRIVATE_KEY="$(/bin/ls $HOME/.aws/pk-*.pem   2>/dev/null || echo 'NOT-FOUND' )"
+    export         EC2_CERT="$(/bin/ls $HOME/.aws/certificate.pem 2>/dev/null || echo 'NOT-FOUND' )"
+    export  EC2_PRIVATE_KEY="$(/bin/ls $HOME/.aws/private-key-in-PCKS8-format.pem 2>/dev/null || echo 'NOT-FOUND' )"
 
 }
 
