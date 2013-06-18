@@ -40,7 +40,7 @@ export AWSENV_TEMPLATE_DIR="$HOME/Dropbox/awsenv/template" # optional
 plugins=(git rvm brew bundler gem osx redis-cli)
 
 source $ZSH/oh-my-zsh.sh
-PS1="$(__awsenv_ps1)$PS1"
+PS1="\$(__awsenv_ps1)$PS1"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
