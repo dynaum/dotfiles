@@ -69,3 +69,5 @@ alias myip='curl -s http://checkrealip.com/ | grep "Current IP Address"'
 alias dnsflush='sudo killall -HUP mDNSResponder'
 
 alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
+
+alias psg='ps -ef | grep -i $1 | grep -v grep'
