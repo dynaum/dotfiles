@@ -12,6 +12,7 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias git="nocorrect git"
 alias npm="nocorrect npm"
+alias rspec="nocorrect rspec"
 
 export EDITOR='vim'
 export CDPATH='$HOME/:$HOME/projects'
