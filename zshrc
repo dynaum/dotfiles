@@ -50,3 +50,6 @@ PATH=$homebrew:$PATH:$HOME/bin
 
 . ~/.alias
 . ~/.local_config
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
