@@ -26,12 +26,11 @@ alias bu='bundle update'
 alias be='bundle exec'
 
 #RAILS
-alias resetdb='rake db:drop:all;rake db:create:all;rake db:migrate;rake db:seed'
+alias resetdb='rake db:drop:all db:create:all db:migrate db:seed'
 alias rst='rails s thin'
 
 alias suse='sudo service'
 alias t='tree'
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias r='rails'
 
 #GIT
@@ -40,6 +39,7 @@ alias g='git $1 | cowthink -n -f tux.cow'
 alias pull='git fetch; git pull origin master'
 alias mu='git pull; git submodule update --init'
 alias gitrb='git fetch; git rebase origin/`git branch | grep \* | sed "s/^\* //g"`'
+alias gp='git push'
 
 #MONGO
 alias mongo-start="mongod --fork --dbpath \$EPREFIX/var/lib/mongodb --logpath \$EPREFIX/var/log/mongodb.log"
@@ -47,7 +47,7 @@ alias mongo-stop="killall -SIGTERM mongod 2>/dev/null"
 alias mongo-status="killall -0 mongod 2>/dev/null; if [ \$? -eq 0 ]; then echo 'started'; else echo 'stopped'; fi"
 
 #VIM ON MAC
-[[ -s "/Applications/MacVim.app/Contents/MacOS/Vim" ]] && alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+[[ -s "/Users/dynaum/Applications/MacVim.app/Contents/MacOS/Vim" ]] && alias vim='/Users/dynaum/Applications/MacVim.app/Contents/MacOS/Vim'
 
 #REDIS
 alias redisstart='sudo launchctl start io.redis.redis-server'
@@ -70,3 +70,9 @@ alias dnsflush='sudo killall -HUP mDNSResponder'
 alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
 
 alias psg='ps -ef | grep -i $1 | grep -v grep'
+
+#BIN
+alias br='bin/rspec'
+
+#Google App Engine
+alias goapp=~/google-cloud-sdk/platform/google_appengine/goapp
