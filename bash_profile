@@ -19,14 +19,7 @@ export REDIS_HOST=192.168.51.4
 export REDIS_PORT=32768
 export ANDROID_HOME=/Users/dynaum/projects/android-sdk-macosx
 export ANDROID_SDK_PATH=/Users/dynaum/Library/Android/sdk
-export S3_IMAGES_BUCKET=parafuzo-images-dev
 
-export RANCHER_URL=http://infra.parafuzo.com:8080/
-export RANCHER_ACCESS_KEY=93336467A5BD275C9472
-export RANCHER_SECRET_KEY=Lf5HbjdzjUvoUcEMRc6Ta13xU5wTKHAmtuJerWoa
-
-export AWS_ACCESS_KEY_ID=AKIAIOUZDXQUOJNNTMOA
-export AWS_SECRET_ACCESS_KEY=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
 export JAVA8_HOME=$(/usr/libexec/java_home)
 
 eval "$(rbenv init -)"
