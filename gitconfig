@@ -19,6 +19,7 @@
   grep       = auto
 [push]
 	default = current
+	followTags = true
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f

@@ -1,4 +1,4 @@
-files=( bash_profile profile irbrc alias vimrc screenrc git-completion.sh gitconfig zshrc tmux.conf awsenv.sh )
+files=( bash_profile profile irbrc alias vimrc screenrc git-completion.sh gitconfig zshrc tmux.conf awsenv.sh kube.sh )
 
 for filename in ${files[@]}
 do
