@@ -72,3 +72,9 @@ alias br='bundle exec rspec'
 
 #Google App Engine
 alias goapp=~/google-cloud-sdk/platform/google_appengine/goapp
+
+#Docker
+alias dc=docker-compose
+
+#Terraform
+alias at="assume_role.sh terraform"

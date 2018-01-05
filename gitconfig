@@ -1,9 +1,9 @@
 [user]
 	name = Elber Ribeiro
-	email = elber@parafuzo.com
+	email = elber.leandro@getninjas.com.br
 
 [alias]
-  st  = status
+  st  = status --short --branch
   ci  = commit
   br  = branch
   co  = checkout
@@ -26,3 +26,5 @@
 	required = true
 [init]
 	templatedir = /Users/dynaum/.git-templates
+[core]
+	excludesfile = /Users/dynaum/.gitignore_global
