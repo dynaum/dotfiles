@@ -1,6 +1,6 @@
 [user]
 	name = Elber Ribeiro
-	email = elber.leandro@getninjas.com.br
+	email = elber.silva@talkdesk.com
 
 [alias]
   st  = status --short --branch
@@ -17,14 +17,18 @@
   interative = auto
   status     = auto
   grep       = auto
+
 [push]
-	default = current
-	followTags = true
+  default = current
+  followTags = true
+
 [filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
+
 [init]
-	templatedir = /Users/dynaum/.git-templates
+  templatedir = /Users/dynaum/.git-templates
+
 [core]
-	excludesfile = /Users/dynaum/.gitignore_global
+  excludesfile = /Users/dynaum/.gitignore_global
