@@ -28,7 +28,9 @@
   required = true
 
 [init]
-  templatedir = /Users/dynaum/.git-templates
+  templatedir = /Users/elber.silva/.git-templates
 
 [core]
-  excludesfile = /Users/dynaum/.gitignore_global
+  excludesfile = /Users/elber.silva/.gitignore_global
+[commit]
+	gpgsign = true
