@@ -31,6 +31,4 @@
   templatedir = /Users/elber.silva/.git-templates
 
 [core]
-  excludesfile = /Users/elber.silva/.gitignore_global
-[commit]
-	gpgsign = true
+	excludesfile = /Users/dynaum/.gitignore_global

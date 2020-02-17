@@ -1,5 +1,5 @@
 . ~/.profile
-[[ -e ".local.sh" ]] && . ~/.local.sh
+[[ -e "$HOME/.local.sh" ]] && . $HOME/.local.sh
 
 export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="4;33"
