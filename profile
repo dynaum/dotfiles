@@ -4,3 +4,5 @@ export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:$HOME/
 export PATH=$HOME/local/node/bin:/Developer/usr/bin:$HOME/Library/Python/3.7/bin:$PATH
 
 . ~/.alias
+
+export PATH="$HOME/.cargo/bin:$PATH"

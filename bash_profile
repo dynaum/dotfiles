@@ -17,7 +17,8 @@ export ANDROID_SDK_PATH=/Users/dynaum/Library/Android/sdk
 eval "$(rbenv init -)"
 
 source "$HOME/.git-completion.sh"
-PS1='\u @ \[\033[1;33m\]\W\a\[\033[0m\] `git branch 2> /dev/null | grep -e ^* | sed -E s/^\\\\\*\ \(.+\)$/\(\\\\\1\)/``cat .terraform/environment 2> /dev/null | sed -E s/^\(.+\)$/[\\\\\1]/`\[\033[37m\]$\[\033[00m\] '
+
+export PS1="\u @ \[\e[33m\]\W\[\e[m\]\`__git_ps1\`\n\\$ "
 
 #source ~/bin/tmuxinator.bash
 
@@ -28,5 +29,18 @@ export SDKMAN_DIR="/Users/elber.silva/.sdkman"
 [[ -s "/Users/elber.silva/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/elber.silva/.sdkman/bin/sdkman-init.sh"
 
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="~/.nodenv/shims:/usr/local/opt/imagemagick@6/bin:$HOME/.cargo/bin:$PATH"
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+eval "$(nodenv init -)"
+
+export KUBECONFIG=/Users/dynaum/.k8s/config/cluster-config

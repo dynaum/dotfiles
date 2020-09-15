@@ -1,5 +1,5 @@
 # some more ls aliases
-alias ll='ls -lh'
+alias ll='ls -lha'
 alias la='ls -A'
 alias l='ls -CF'
 alias install='sudo apt-get install'
@@ -78,3 +78,6 @@ alias dc=docker-compose
 
 #Terraform
 alias at="assume_role.sh terraform"
+alias tf="terraform"
+
+alias lsplog="tail -f /tmp/lsp_*.log"
