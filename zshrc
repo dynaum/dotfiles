@@ -33,15 +33,9 @@ export AWS_CLOUDWATCH_HOME="/usr/local/Library/LinkedKegs/cloud-watch/jars"
 export AWS_IAM_HOME="/usr/local/opt/aws-iam-tools/jars"
 export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
 
-# AWS Env
-export AWSENV_PROFILES_DIR="$HOME/Dropbox/awsenv/profiles"
-export AWSENV_TEMPLATE_DIR="$HOME/Dropbox/awsenv/template" # optional
-. ~/.awsenv.sh
-
-plugins=(git rvm brew bundler gem osx redis-cli)
+plugins=(git rvm brew bundler gem macos redis-cli)
 
 source $ZSH/oh-my-zsh.sh
-PS1="\$(__awsenv_ps1)$PS1"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
@@ -51,11 +45,14 @@ PATH=$homebrew:$PATH:$HOME/bin
 . ~/.alias
 . ~/.local_config
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/elber.silva/.sdkman"
 [[ -s "/Users/elber.silva/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/elber.silva/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$HOME/.asdf/shims:$PATH"
+
+eval "$(rbenv init -)"
+
+source /Users/elber.ribeiro/.config/broot/launcher/bash/br

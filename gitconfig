@@ -1,6 +1,6 @@
 [user]
 	name = Elber Ribeiro
-	email = ersilva@thehuub.co
+	email = elber.ribeiro@shore.com
 
 [alias]
   st  = status --short --branch
@@ -26,9 +26,6 @@
   clean = git hawser clean %f
   smudge = git hawser smudge %f
   required = true
-
-[init]
-  templatedir = /Users/elber.silva/.git-templates
 
 [core]
 	excludesfile = /Users/dynaum/.gitignore_global

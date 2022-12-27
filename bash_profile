@@ -44,3 +44,5 @@ fi
 eval "$(nodenv init -)"
 
 export KUBECONFIG=/Users/dynaum/.k8s/config/cluster-config
+
+source /Users/elber.ribeiro/.config/broot/launcher/bash/br
