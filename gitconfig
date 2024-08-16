@@ -1,6 +1,6 @@
 [user]
 	name = Elber Ribeiro
-	email = elber.ribeiro@shore.com
+	email = elber.ribeiro@klara.com
 
 [alias]
   st  = status --short --branch
@@ -29,3 +29,5 @@
 
 [core]
 	excludesfile = /Users/dynaum/.gitignore_global
+[url "https://"]
+	insteadOf = git://

@@ -67,14 +67,15 @@ alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
 
 alias psg='ps -ef | grep -i $1 | grep -v grep'
 
-#BIN
-alias br='bundle exec rspec'
-
 #Google App Engine
 alias goapp=~/google-cloud-sdk/platform/google_appengine/goapp
 
 #Docker
 alias dc=docker-compose
+alias dr='dc run --rm app'
+
+#BIN
+alias br='bundle exec rspec'
 
 #Terraform
 alias at="assume_role.sh terraform"
